@@ -60,7 +60,7 @@ nav {
 	top: 0;
 	background-color: transparent;
 	font-style: normal;
-	background: linear-gradient(0deg, rgba(63,76,107,0.4) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(0deg, rgba(63,76,107,0) 0%,rgba(63,76,107,2) 100%);
 	z-index: 1;
 }
 
@@ -231,8 +231,16 @@ h3 {
 
 /***** FOOTER *********************************/
 footer {
-	
+	height: 100vh;
+	background-color: #fff;
 }
 
+#footer-block {
+	width: 100%;
+	padding: 3em 0;
+	text-align: center;
+	color: #DCDCDC;
+	background: linear-gradient(180deg, rgba(63,76,107,0) 0%,rgba(63,76,107,2) 100%);
+}
 
 
