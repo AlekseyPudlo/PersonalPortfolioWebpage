@@ -235,6 +235,28 @@ footer {
 	background-color: #fff;
 }
 
+#contacts-block {
+	margin: auto 0;
+	text-align: center;
+}
+
+#contacts-block > p:nth-child(1) {
+	font-weight: 400;
+	font-size: 1.8em;
+	font-style: normal;
+	letter-spacing: 4px;
+	line-height: 1.3em;
+	text-transform: uppercase;
+}
+
+#contacts-block > p:nth-child(2) {
+	font-weight: 800;
+	font-size: 2em;
+	font-style: normal;
+	letter-spacing: 2px;
+	line-height: 2em;
+}
+
 #footer-block {
 	width: 100%;
 	padding: 3em 0;
