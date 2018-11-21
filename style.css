@@ -21,7 +21,7 @@ body {
 	overflow: hidden;
 }
 
-.flex-center {
+.flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -34,6 +34,10 @@ body {
 
 .wrap {
 	flex-wrap: wrap;
+}
+
+.flex-end {
+	justify-content: flex-end;
 }
 
 .grow {
@@ -58,13 +62,6 @@ nav {
 	font-style: normal;
 	background: linear-gradient(0deg, rgba(63,76,107,0.4) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	z-index: 1;
-}
-
-.nav-layout {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: flex-end;
 }
 
 .nav-link {
