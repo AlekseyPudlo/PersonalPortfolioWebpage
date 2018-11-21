@@ -221,8 +221,18 @@ h3 {
 	letter-spacing: .5px;
 	line-height: 1.6em;
 }
+
 /***** PROJECTS SECTION ***********************/
 #projects-img {
 	position: relative;
 	bottom: 400px;
 }
+
+
+/***** FOOTER *********************************/
+footer {
+	
+}
+
+
+
