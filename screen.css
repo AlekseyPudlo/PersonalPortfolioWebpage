@@ -60,7 +60,7 @@ body {
 }
 
 /***** NAV BAR ***********************/
-nav {
+#navbar {
 	animation: feature-navbar-anim 1.1s;
 	width: 100%;
 	display: flex;
