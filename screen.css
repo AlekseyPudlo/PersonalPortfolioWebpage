@@ -247,7 +247,16 @@ h3 {
 	min-height: 100vh;
 }
 #project-block {
-	background-color: rgba(197, 86, 86, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	height: 40em;
+	width: 45em;
+	border-radius: 0.5em;
+
+	background-color: rgba(245, 239, 239, 0.774);
 }
 
 
