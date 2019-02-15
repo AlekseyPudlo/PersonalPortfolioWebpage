@@ -25,9 +25,10 @@ body {
 	background-image: url(./imgs/pexels-photo-167676.jpeg);
 	min-height: 100vh;
 }
-
-.flex-column-center {
+.flex {
 	display: flex;
+}
+.column-center {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
