@@ -25,7 +25,8 @@ body {
 	background-image: url(./imgs/pexels-photo-167676.jpeg);
 	min-height: 100vh;
 }
-.flex {
+
+.flex-column-center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -39,9 +40,6 @@ body {
 }
 .flex-end {
 	justify-content: flex-end;
-}
-.flex-space-around {
-	justify-content: space-around;
 }
 .grow {
 	transition: all .3s ease-in-out;
@@ -115,13 +113,11 @@ a:hover[type="contact"]{
 
 /***** WELCOME SECTION ****************/
 #welcome-section {
+	display: flex;
 	width: 100%;
 }
 #welcome-text-block {
 	animation: feature-text-anim .75s;
-	position: absolute;
-	top: 50vh;
-	width: 100%;
 	margin: auto;
 	text-align: center;
 	color: #fff;
