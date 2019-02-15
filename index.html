@@ -7,15 +7,15 @@
 		/>
 		<meta charset="UTF-8" />
 		<title>Personal Portfolio Webpage</title>
-		<link rel="stylesheet" href="screen.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="screen.css" type="text/css" media="screen" />
 	</head>
 	<body>
 		<nav id="navbar">
-			<div class="flex column-center row wrap">
+			<div class="flex wrap">
 				<a href="#welcome-section" class="nav-link" type="home">Home</a>
 			</div>
 
-			<div class="flex column-center row wrap flex-end">
+			<div class="flex wrap flex-end">
 				<a href="#projects" class="nav-link" type="projects">Projects</a>
 				<a href="" class="nav-link" type="resume">Resumé</a>
 				<a href="#footer" class="nav-link" type="contact">Contact</a>
@@ -23,7 +23,7 @@
 		</nav>
 
 		<main>
-			<section id="welcome-section" class="welcome-bgimg paralax-effect-bgimg">
+			<section id="welcome-section" class="flex welcome-bgimg paralax-effect-bgimg">
 				<div id="welcome-text-block">
 					<h1><strong>Hey! I’m Oleksii Pudlo</strong></h1>
 					<p>I'm a web developer</p>
@@ -31,10 +31,9 @@
 				</div>
 			</section>
 
-			<section id="main-content-section">
-				<div class="flex column-center row wrap" id="icons-wrapper">
-					<div class="flex column-center row">
-						<div class="flex column-center wrap grow" id="about-block">
+			<section id="main-content-section" class="flex column center">
+					<div id="icons-wrapper">
+						<div class="flex column center grow" id="about-block">
 							<img src="icons/speed-50.png" alt="" id="fast-icon" />
 							<label for="fast-text">Fast</label>
 							<p id="fast-text">
@@ -42,17 +41,15 @@
 							</p>
 						</div>
 
-						<div class="flex column-center wrap grow" id="about-block">
+						<div class="flex column center grow" id="about-block">
 							<img src="icons/responsive-50.png" alt="" id="responsive-icon" />
 							<label for="responsive-text">Responsive</label>
 							<p id="responsive-text">
 								My Layouts will work on any devices, big or small
 							</p>
 						</div>
-					</div>
 
-					<div class="flex column-center row">
-						<div class="flex column-center wrap grow" id="about-block">
+						<div class="flex column center grow" id="about-block">
 							<img src="icons/light-on-48.png" alt="" id="intuitive-icon" />
 							<label for="intuitive-text">Intuitive</label>
 							<p class="intuitive-text">
@@ -60,7 +57,7 @@
 							</p>
 						</div>
 
-						<div class="flex column-center wrap grow" id="about-block">
+						<div class="flex column center grow" id="about-block">
 							<img src="icons/launch-50.png" alt="" id="dynamic-icon" />
 							<label for="dynamic-text">Dynamic</label>
 							<p id="dynamic-text">
@@ -69,13 +66,13 @@
 							</p>
 						</div>
 					</div>
-				</div>
 
-				<div class="flex column-center row wrap" id="content-wrapper">
+
+				<div class="flex wrap" id="content-wrapper">
 					<div id="owners-img-block">
 						<img
 							src="imgs/IMG_1859.JPG"
-							alt="Picture of the creature of the page"
+							alt="Picture of the creator of the page"
 							id="owners-img"
 						/>
 					</div>
@@ -120,16 +117,16 @@
 				</div>
 			</section>
 		</main>
-		<footer class="flex column-center flex-end" id="footer">
+		<footer class="flex column flex-end" id="footer">
 			<div id="contacts-block">
 				<p>Business inquiries only</p>
 				<p>pudloleksii@gmail.com</p>
 				<p>Informal conversation should be directed to my facebook</p>
 			</div>
 
-			<div class="flex column-center row wrap" id="icon-block">
+			<div class="flex center wrap" id="icon-block">
 				<a
-					href="https://www.linkedin.com/in/oleksii-pudlo-5796a15b/"
+					href="https://linkedin.com/in/oleksii-pudlo"
 					target="_blank"
 					class="grow"
 					><img src="icons/linkedin-50.png" alt=""

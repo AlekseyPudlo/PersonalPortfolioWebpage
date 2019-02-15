@@ -28,13 +28,15 @@ body {
 .flex {
 	display: flex;
 }
-.column-center {
+.column {
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 .row {
 	flex-direction: row;
+}
+.center {
+	justify-content: center;
+	align-items: center;
 }
 .wrap {
 	flex-wrap: wrap;
@@ -114,7 +116,6 @@ a:hover[type="contact"]{
 
 /***** WELCOME SECTION ****************/
 #welcome-section {
-	display: flex;
 	width: 100%;
 }
 #welcome-text-block {
@@ -151,31 +152,28 @@ h1 {
 	font-style: normal;
 	background-color: #fff;
 }
-
 #icons-wrapper {
-	padding-top: 5em;
-	padding-bottom: 5em;
+	margin: auto;
+	/* padding-top: 5em;
+	padding-bottom: 5em; */
+	display: inline-grid;
+	grid-template-columns: 14em 14em 14em 14em;
+	grid-template-rows: 15em; 
+	grid-column-gap: 3em;
 }
-
+#content-wrapper {
+	margin: auto;
+}
 #about-block {
-	height: 150px;
-	width: 245px;
-	padding: 0 1.5em;
 	text-align: center;
 	filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
 }
-
 #about-block > label {
 	font-size: 1.3em;
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin: .5em;
 }
-
-#about-block > p {
-	padding: .3em;
-}
-
 #owners-img-block {
 	overflow: hidden;
 	margin-right: 5em;
