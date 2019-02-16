@@ -177,24 +177,20 @@ h1 {
 #owners-img-block {
 	overflow: hidden;
 	margin-right: 5em;
-	filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+	border-radius: 50%;
+	filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.7));
 }
-
 #owners-img {
-	width: 350px;
+	width: 25em;
 	position: relative;
-	border-radius: 10px;
 }
-
 #description {
-	width: 700px;
+	width: 40em;
 }
-
 h3 {
 	font-size: 3em;
 	letter-spacing: 2px;
 }
-
 #description > p {
 	margin: .5em 0;
 	font-family: 'Nunito';
