@@ -77,28 +77,19 @@ body {
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
-
-a[type="home"]{
-
-}
-
 a[type="projects"]{
 	color: #DCDCDC;
 }
-
 a:hover[type="resume"]{
 	color: #DCDCDC;
 }
-
 a[type="contact"]{
 	border: 2px solid #FFFFFF;
 }
-
 a:hover[type="contact"]{
 	background-color: #FFFFFF;
 	color: #000000;
 }
-
 @keyframes feature-navbar-anim {
 	0% {
 		opacity: 0;
@@ -112,8 +103,6 @@ a:hover[type="contact"]{
 		opacity:1;
 		transform: translate3d(0,0,0)}
 }
-
-
 /***** WELCOME SECTION ****************/
 #welcome-section {
 	width: 100%;
@@ -144,7 +133,6 @@ h1 {
 		opacity:1;
 		transform: translate3d(0,0,0)}
 }
-
 /***** MAIN CONTENT SECTION ********************/
 #main-content-section {
 	width: 100%;
@@ -154,8 +142,6 @@ h1 {
 }
 #icons-wrapper {
 	margin: auto;
-	/* padding-top: 5em;
-	padding-bottom: 5em; */
 	display: inline-grid;
 	grid-template-columns: 14em 14em 14em 14em;
 	grid-template-rows: 15em; 
@@ -182,7 +168,6 @@ h1 {
 }
 #owners-img {
 	width: 25em;
-	position: relative;
 }
 #description {
 	width: 40em;
@@ -200,7 +185,6 @@ h3 {
 	letter-spacing: .5px;
 	line-height: 1.6em;
 }
-
 /***** PROJECTS SECTION ***********************/
 #projects{
 	display: flex;
@@ -213,14 +197,21 @@ h3 {
 	min-height: 100vh;
 }
 #projects-block {
-	height: 40em;
-	width: 40em;
 	margin: auto;
-	text-align: center;
-	background-color: rgba(136, 65, 65, 0.568);
+	display: grid;
+	grid-template-columns: 20em 20em 20em;
+	grid-template-rows: 15em 15em; 
+	grid-gap: 3em;
 }
-
-
+#project-tile {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: rgba(146, 146, 146, 0.6);
+}
+#project-tile:hover {
+	background-color: rgb(255, 255, 255);
+}
 /***** FOOTER *********************************/
 footer {
 	height: 100vh;
