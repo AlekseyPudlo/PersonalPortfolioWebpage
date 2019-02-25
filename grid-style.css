@@ -21,14 +21,12 @@ body {
 	/* Full height */
 	background-image: url(./imgs/pexels-photo-167676.jpeg);
     min-height: 100vh;
-    /* min-width: 100vw; */
 }
 /* class which handles projects sections image */
 .projects-bgimg{
 	/* Full height */
 	background-image: url(./imgs/boats-cargo-cargo-container-753331.jpg);
     min-height: 100vh;
-    /* min-width: 100vw; */
 }
 /* Animation styling section */
 @keyframes feature-navbar-anim {
@@ -44,19 +42,38 @@ body {
 		opacity:1;
 		transform: translate3d(0,0,0)}
 }
+@keyframes feature-text-anim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,10px,0)
+	}
+	50% {
+		opacity:0;
+		transform: translate3d(0,10px,0)
+	}
+	100% {
+		opacity:1;
+		transform: translate3d(0,0,0)}
+}
+.grow {
+	transition: all .3s ease-in-out;
+}
+.grow:hover {
+	transform: scale(1.1);
+}
 
 /* Navigation bar section */
 #navbar {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 1;
     
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 1em;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "home . projects resume contact";
+        "home-link . projects-link resume-link contact-link";
 
 	background-color: transparent;
 	font-style: normal;
@@ -73,26 +90,163 @@ body {
 	letter-spacing: 2px;
 	line-height: 1.2em;
 	color: #FFFFFF;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
 }
 a[type="home"]{
-    grid-area: home;
+    grid-area: home-link;
+    text-align: start;
 }
 a[type="projects"]{
-    grid-area: projects;
+    grid-area: projects-link;
 	color: #DCDCDC;
 }
 a[type="resume"]{
-    grid-area: resume;
+    grid-area: resume-link;
 }
 a:hover[type="resume"]{
 	color: #DCDCDC;
 }
 a[type="contact"]{
-    grid-area: contact;
+    grid-area: contact-link;
 	border: 2px solid #FFFFFF;
 }
 a:hover[type="contact"]{
 	background-color: #FFFFFF;
 	color: #000000;
 }
+/* Welcome section */
+#welcome-section {
+    display: flex;
+}
+#welcome-text-block {
+	animation: feature-text-anim .75s;
+    margin: auto;
+    padding: 1em;
+	text-align: center;
+	color: #fff;
+}
+h1 {
+	font-size: 4em;
+	letter-spacing: 2px;
+}
+#welcome-text-block > p {
+	font-size: 1.5em;
+}
+/* Main Content section */
+#main-content-section {
+    height: 100vh;
+    padding: 0 2em;
+	font-style: normal;
+    background-color: #fff;
+
+
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas: 
+        "owners-img     description"
+        "owners-img     description"
+        "cards-wrapper  cards-wrapper";
+
+
+}
+#cards-wrapper {
+    grid-area: cards-wrapper;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+        "fast-card responsive-card intuitive-card dynamic-card";
+    align-content: center;
+    justify-content: center;
+}
+#fast-card {
+    grid-area: fast-card;
+}
+#responsive-card {
+    grid-area: responsive-card;
+}
+#intuitive-card {
+    grid-area: intuitive-card;
+}
+#dynamic-card {
+    grid-area: dynamic-card;
+}
+#owners-img {
+    grid-area: owners-img;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+	border-radius: 50%;
+	filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.7));
+}
+#description {
+    grid-area: description;
+    align-self: center;
+    justify-self: center;
+}
+h3 {
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+#description > p {
+	margin: .5em 0;
+	font-family: 'Nunito';
+	font-size: 1.2em;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: .5px;
+	line-height: 1.6em;
+}
+.icon {
+    margin: 0 auto;
+}
+.about-block {
+    margin-bottom: 5em;
+    display: flex;
+    flex-flow: column nowrap;
+	text-align: center;
+	filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+}
+.about-block > label {
+	font-size: 1.3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: .5em;
+}
+
+
+/* Different media devices */
+@media all
+	and (max-width: 640px) {
+        /* Navigation bar */
+        #navbar {
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns:  1fr 1fr;
+            grid-template-rows:     1fr 1fr 1fr;
+            grid-template-areas: 
+                "home-link  projects-link"
+                ".  resume-link"
+                ".  contact-link";
+        }
+        a[type="contact"] {
+            border: none;
+        }
+        .nav-link {
+            margin: 0;
+        }
+        /* Welcome section */
+        h1 {
+            font-size: 1.8em;
+        }
+        #welcome-text-block > p {
+            font-size: 1em;
+        }
+    }
+@media all
+	and (max-width: 480px) {
+
+    }
