@@ -19,7 +19,7 @@ body {
 /* class which handles welcome sections image */
 .welcome-bgimg {
 	/* Full height */
-	background-image: url(./imgs/pexels-photo-167676.jpeg);
+	background-image: url(./imgs/Hamburg-Harburg.jpg);
     min-height: 100vh;
 }
 /* class which handles projects sections image */
